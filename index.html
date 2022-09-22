@@ -19,58 +19,70 @@
       rel="stylesheet"
     />
 
-  <!-- SASS -->
-  <link rel="stylesheet" href="css/app.css">
+    <!-- SASS -->
+    <link rel="stylesheet" href="css/app.css" />
   </head>
 
   <body>
     <div class="nav">
       <div class="container d-flex justify-content-between align-items-center">
         <a href="/">Juicios de Lesa</a>
-        <img src="/img/burger.svg" alt="" onclick="myFunction(this)">
-      <div class="menu-nav d-none">
-        <ul>
-          <p class="li-seccion">SECCIONES</p>
-          <li>Inicio</li>
-          <li>Los juicios en datos</li>
-          <li>Mapa de juicios</li>
-          <li>Linea de tiempo</li>
-          <li>Lista de juicios</li>
-          <li>Microrelatos</li>
-        </ul>
-      </div>
+        <img src="/img/burger.svg" alt="" onclick="myFunction(this)" />
+        <div class="menu-nav d-none">
+          <ul>
+            <p class="li-seccion">SECCIONES</p>
+            <li>Inicio</li>
+            <li>Los juicios en datos</li>
+            <li>Mapa de juicios</li>
+            <li>Linea de tiempo</li>
+            <li>Lista de juicios</li>
+            <li>Microrelatos</li>
+          </ul>
+        </div>
       </div>
     </div>
-    
+
     <div class="head">
       <div class="container">
         <div class="row">
           <div class="col-8">
-        <div class="text">
-          <p class="title">Juicios de Lesa Humanidad en tiempo real</p>
-          <p class="head-text">Sitio de datos interactivos de los juicios por crímenes de lesa humanidad argentinos con historias, monitor de velocidad
-          y estadísticas. Está desarrollado por la Secretaría de Derechos Humanos de Nación para comunicar e impulsar el proceso
-          de Memoria, Verdad y Justicia.</p>
-          <div class="head-button d-flex align-items-center justify-content-center">
-            <p id="modal-trigger" data-toggle="modal" data-target="#exampleModalCenter">Conocé más sobre este proyecto</p>
-            <img class="ms-2"src="/img/info-mini.svg" alt="">
+            <div class="text">
+              <p class="title">Juicios de Lesa Humanidad en tiempo real</p>
+              <p class="head-text">
+                Sitio de datos interactivos de los juicios por crímenes de lesa humanidad argentinos con historias,
+                monitor de velocidad y estadísticas. Está desarrollado por la Secretaría de Derechos Humanos de Nación
+                para comunicar e impulsar el proceso de Memoria, Verdad y Justicia.
+              </p>
+              <div class="head-button d-flex align-items-center justify-content-center">
+                <p id="modal-trigger" data-toggle="modal" data-target="#exampleModalCenter">
+                  Conocé más sobre este proyecto
+                </p>
+                <img class="ms-2" src="/img/info-mini.svg" alt="" />
+              </div>
+            </div>
           </div>
-        </div>
-        </div>
-        <div class="col-4">
-        <div class="counter d-flex flex-column align-items-center justify-content-center">
-          <img class="arco" src="/img/arco-casos.svg" alt="">
-          <p class="number mb-1">1124</p>
-          <button class="micro-button d-flex justify-content-center align-items-center ps-2">Represores codenados</button>
-        </div>
-        </div>
+          <div class="col-4">
+            <div class="counter d-flex flex-column align-items-center justify-content-center">
+              <img class="arco" src="/img/arco-casos.svg" alt="" />
+              <p class="number mb-1">1124</p>
+              <button class="micro-button d-flex justify-content-center align-items-center ps-2">
+                Represores codenados
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-      aria-hidden="true">
+    <div
+      class="modal fade"
+      id="exampleModalCenter"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -80,71 +92,103 @@
           </div>
           <div class="modal-body">
             <h5 class="modal-title title text-center mb-3" id="exampleModalCenterTitle">SOBRE ESTE PROYECTO</h5>
-            
+
             <div class="all-text-modal pe-3">
-            <p class="preg-modal">¿En qué consiste?</p>
-            <p class="text-modal">El sitio es una base de datos interactiva que reúne la información completa de los juicios por crímenes de lesa
-            humanidad que se realizaron en Argentina desde la vuelta de la democracia hasta el presente y ofrece el seguimiento en
-            vivo de los debates que están en desarrollo.</p>
-            <p class="text-modal">Contiene información detallada de las causas por jurisdicción con números de imputados, testigos y
-              víctimas lo que
-              permite comprender el volumen que los debates alcanzaron a lo largo de la historia en todo el país. Además, ofrece
-              gráficos interactivos sobre la velocidad a la que se desarrollaron los juicios en los que la variable del tiempo es
-              importante para llevar a juicio a los imputados y dar reparación a las víctimas a décadas del final de la dictadura.
-            </p>
-            <p class="preg-modal">¿Qué es la SDH?</p>
-            <p class="text-modal">La Secretaría de Derechos Humanos (SDH) es el organismo del Estado Nacional encargado de garantizar la protección de los
-            derechos humanos en la Argentina y de promover su cumplimiento. En los juicios por crímenes de lesa humanidad articula,
-            con los demás poderes del Estado, políticas públicas para darles impulso y fortalecerlos, participa como querellante en
-            las causas y asiste y acompaña a víctimas y testigos. También lleva adelante políticas reparatorias para quienes fueron
-            víctimas de graves violaciones de derechos humanos.</p>
-            <p class="preg-modal">¿Qué son los juicios de lesa humanidad?</p>
-            <p class="text-modal">Son procesos judiciales que buscan llevar justicia a las víctimas del terrorismo de Estado en la Argentina. Investigan
-            la responsabilidad de integrantes de las Fuerzas Armadas y de Seguridad, de funcionarios judiciales, miembros de
-            instituciones religiosas, de civiles o grupos empresariales en graves violaciones a los derechos humanos cometidas antes
-            y durante la última dictadura cívico-militar (1976-1983), como secuestros, desapariciones forzadas, ejecuciones,
-            torturas, apropiaciones y delitos de índole sexual.</p>
-            <p class="preg-modal">Un proyecto en crecimiento</p>
-            <p class="text-modal">Desde septiembre de 2020, la SDH comenzó un proyecto de estandarización de la información de los juicios de lesa
-            humanidad con el objetivo de construir una base de datos de acceso público. En abril de 2021, puso en línea la primera
-            etapa focalizada en los juicios orales que estaban en debate en todo el país. En 2022, amplió su contenido hasta abarcar
-            la totalidad de los juicios que se realizaron desde la vuelta de la democracia.</p>
-            <p class="title text-center mt-4 mb-4">QUÉ PUEDEN ENCONTRAR</p>
-            <p class="preg-modal">Los juicios en detalle</p>
-            <p class="text-modal">La web dispone de un listado interactivo que exhibe el detalle de los juicios históricos y actuales realizados en todo
-            el país según jurisdicciones, cantidad de imputados, testigos y víctimas. Y señala aquellos en los que la Secretaría de
-            Derechos Humanos de la Nación intervino o interviene como parte querellante.</p>
-            <p class="preg-modal">Microrrelatos. Historias, testimonios y escenas de los juicios.</p>
-            <p class="text-modal">Los juicios están vivos y todos los días generan historias a través de las declaraciones de sobrevivientes, familiares y
-            testigos. Los microrrelatos son pequeñas escenas de los testimonios transformados en historias audiovisuales. El
-            desarrollo está a cargo de un equipo compuesto por periodistas, historiadores y artistas. Los trabajos se realizaron con
-            la colaboración ad-honorem de ilustradores, artistas plásticos y audiovisuales, actores, actrices y estudiantes.
-            Contienen documentos y fotografías de diversos fondos del Archivo Nacional de la Memoria.</p>
-            <p class="preg-modal">Contador de personas condenadas</p>
-            <p class="text-modal">Ofrece el número total de personas condenadas por delitos de lesa humanidad hasta la fecha. Contiene breves biografías
-            con nombre y apellido, alias, causa, fuerza de pertenencia y jurisdicción.</p>
-            <p class="preg-modal">Línea de tiempo</p>
-            <p class="text-modal">Recorrido interactivo de las últimas cuatro décadas de historia argentina con los principales hitos del proceso de
-            memoria, verdad, justicia y reparación. Narra la lucha de los organismos de derechos humanos contra la impunidad, los
-            retrocesos, avances y las políticas públicas labradas por los distintos poderes del Estado. Las diversas historias
-            repasan los hechos más significativos y el impacto en la ciudadanía.</p>
-            <p class="preg-modal">Mapa de los juicios</p>
-            <p class="text-modal">Mapeo gráfico de los juicios orales de lesa humanidad según geolocalización y parámetros temporales.</p>
-            <p class="preg-modal">Monitor de velocidad</p>
-            <p class="text-modal">El monitor de velocidad es una herramienta de visualización de datos que muestra el ritmo en el que se desarrollan las
-            causas de lesa humanidad. Compara avances, demoras y elabora tiempos promedio. Es una herramienta novedosa basada en una
-            serie de indicadores que por primera vez traduce en datos el proceso de Justicia argentino.</p>
-            
-            <p class="preg-modal">Acusados en debate</p>
-            <p class="text-modal">A través de un sistema de barras, muestra el número de personas desafectadas en cada juicio de lesa humanidad por
-            razones de salud y fallecimiento, entre otras causas. Los datos corresponden a los juicios en debate. Una de las
-            conclusiones que exhiben los gráficos es que a medida que pasan los años hay más imputados desafectados de los procesos
-            porque son más grandes de edad.</p>
+              <p class="preg-modal">¿En qué consiste?</p>
+              <p class="text-modal">
+                El sitio es una base de datos interactiva que reúne la información completa de los juicios por crímenes
+                de lesa humanidad que se realizaron en Argentina desde la vuelta de la democracia hasta el presente y
+                ofrece el seguimiento en vivo de los debates que están en desarrollo.
+              </p>
+              <p class="text-modal">
+                Contiene información detallada de las causas por jurisdicción con números de imputados, testigos y
+                víctimas lo que permite comprender el volumen que los debates alcanzaron a lo largo de la historia en
+                todo el país. Además, ofrece gráficos interactivos sobre la velocidad a la que se desarrollaron los
+                juicios en los que la variable del tiempo es importante para llevar a juicio a los imputados y dar
+                reparación a las víctimas a décadas del final de la dictadura.
+              </p>
+              <p class="preg-modal">¿Qué es la SDH?</p>
+              <p class="text-modal">
+                La Secretaría de Derechos Humanos (SDH) es el organismo del Estado Nacional encargado de garantizar la
+                protección de los derechos humanos en la Argentina y de promover su cumplimiento. En los juicios por
+                crímenes de lesa humanidad articula, con los demás poderes del Estado, políticas públicas para darles
+                impulso y fortalecerlos, participa como querellante en las causas y asiste y acompaña a víctimas y
+                testigos. También lleva adelante políticas reparatorias para quienes fueron víctimas de graves
+                violaciones de derechos humanos.
+              </p>
+              <p class="preg-modal">¿Qué son los juicios de lesa humanidad?</p>
+              <p class="text-modal">
+                Son procesos judiciales que buscan llevar justicia a las víctimas del terrorismo de Estado en la
+                Argentina. Investigan la responsabilidad de integrantes de las Fuerzas Armadas y de Seguridad, de
+                funcionarios judiciales, miembros de instituciones religiosas, de civiles o grupos empresariales en
+                graves violaciones a los derechos humanos cometidas antes y durante la última dictadura cívico-militar
+                (1976-1983), como secuestros, desapariciones forzadas, ejecuciones, torturas, apropiaciones y delitos de
+                índole sexual.
+              </p>
+              <p class="preg-modal">Un proyecto en crecimiento</p>
+              <p class="text-modal">
+                Desde septiembre de 2020, la SDH comenzó un proyecto de estandarización de la información de los juicios
+                de lesa humanidad con el objetivo de construir una base de datos de acceso público. En abril de 2021,
+                puso en línea la primera etapa focalizada en los juicios orales que estaban en debate en todo el país.
+                En 2022, amplió su contenido hasta abarcar la totalidad de los juicios que se realizaron desde la vuelta
+                de la democracia.
+              </p>
+              <p class="title text-center mt-4 mb-4">QUÉ PUEDEN ENCONTRAR</p>
+              <p class="preg-modal">Los juicios en detalle</p>
+              <p class="text-modal">
+                La web dispone de un listado interactivo que exhibe el detalle de los juicios históricos y actuales
+                realizados en todo el país según jurisdicciones, cantidad de imputados, testigos y víctimas. Y señala
+                aquellos en los que la Secretaría de Derechos Humanos de la Nación intervino o interviene como parte
+                querellante.
+              </p>
+              <p class="preg-modal">Microrrelatos. Historias, testimonios y escenas de los juicios.</p>
+              <p class="text-modal">
+                Los juicios están vivos y todos los días generan historias a través de las declaraciones de
+                sobrevivientes, familiares y testigos. Los microrrelatos son pequeñas escenas de los testimonios
+                transformados en historias audiovisuales. El desarrollo está a cargo de un equipo compuesto por
+                periodistas, historiadores y artistas. Los trabajos se realizaron con la colaboración ad-honorem de
+                ilustradores, artistas plásticos y audiovisuales, actores, actrices y estudiantes. Contienen documentos
+                y fotografías de diversos fondos del Archivo Nacional de la Memoria.
+              </p>
+              <p class="preg-modal">Contador de personas condenadas</p>
+              <p class="text-modal">
+                Ofrece el número total de personas condenadas por delitos de lesa humanidad hasta la fecha. Contiene
+                breves biografías con nombre y apellido, alias, causa, fuerza de pertenencia y jurisdicción.
+              </p>
+              <p class="preg-modal">Línea de tiempo</p>
+              <p class="text-modal">
+                Recorrido interactivo de las últimas cuatro décadas de historia argentina con los principales hitos del
+                proceso de memoria, verdad, justicia y reparación. Narra la lucha de los organismos de derechos humanos
+                contra la impunidad, los retrocesos, avances y las políticas públicas labradas por los distintos poderes
+                del Estado. Las diversas historias repasan los hechos más significativos y el impacto en la ciudadanía.
+              </p>
+              <p class="preg-modal">Mapa de los juicios</p>
+              <p class="text-modal">
+                Mapeo gráfico de los juicios orales de lesa humanidad según geolocalización y parámetros temporales.
+              </p>
+              <p class="preg-modal">Monitor de velocidad</p>
+              <p class="text-modal">
+                El monitor de velocidad es una herramienta de visualización de datos que muestra el ritmo en el que se
+                desarrollan las causas de lesa humanidad. Compara avances, demoras y elabora tiempos promedio. Es una
+                herramienta novedosa basada en una serie de indicadores que por primera vez traduce en datos el proceso
+                de Justicia argentino.
+              </p>
+
+              <p class="preg-modal">Acusados en debate</p>
+              <p class="text-modal">
+                A través de un sistema de barras, muestra el número de personas desafectadas en cada juicio de lesa
+                humanidad por razones de salud y fallecimiento, entre otras causas. Los datos corresponden a los juicios
+                en debate. Una de las conclusiones que exhiben los gráficos es que a medida que pasan los años hay más
+                imputados desafectados de los procesos porque son más grandes de edad.
+              </p>
               <p class="preg-modal">Los nuevos temas</p>
-              <p class="text-modal">Los juicios orales por crímenes de lesa humanidad analizan históricamente responsabilidades de las Fuerzas Armadas y de
-              Seguridad por secuestros, desapariciones forzadas, ejecuciones y torturas. Algunos comenzaron a tomar nuevas temáticas:
-              violencia sexual, delitos por motivación económica, inteligencia y complicidades civiles.</p>
-            <div class="green-modal text-center p-3 mt-3">
+              <p class="text-modal">
+                Los juicios orales por crímenes de lesa humanidad analizan históricamente responsabilidades de las
+                Fuerzas Armadas y de Seguridad por secuestros, desapariciones forzadas, ejecuciones y torturas. Algunos
+                comenzaron a tomar nuevas temáticas: violencia sexual, delitos por motivación económica, inteligencia y
+                complicidades civiles.
+              </p>
+              <div class="green-modal text-center p-3 mt-3">
                 <p class="green-modal-title mb-3">Autoridades</p>
                 <p>Ministerio de Justicia y Derechos Humanos</p>
                 <p class="bold mb-2 mt-1">Martín Ignacio Soria</p>
@@ -152,7 +196,7 @@
                 <p class="bold mb-2 mt-1">Horacio Pietragalla Corti</p>
                 <p>Dirección de Coordinación Estratégica</p>
                 <p class="bold mb-2 mt-1">Nicolás M. Rapetti</p>
-            </div>
+              </div>
             </div>
           </div>
         </div>
@@ -164,33 +208,50 @@
           <div class="col-8">
             <div class="agenda">
               <p class="title">Agenda de audiencias</p>
-              <div class="agenda-nav d-flex mt-3">
-                <button id="button-left"class="button-agenda left click-green"onclick="agendaFunction(this)">Proximas audiencias</button>
-                <button id="button-right" class="button-agenda right" onclick="agendaFunction(this)">Audencias pasadas</button>
+              <div class="agenda-nav d-flex mt-3 pb-4">
+                <button id="button-left" class="button-agenda left click-green" onclick="agendaFunction(this)">
+                  Proximas audiencias
+                </button>
+                <button id="button-right" class="button-agenda right" onclick="agendaFunction(this)">
+                  Audencias pasadas
+                </button>
               </div>
+            <div id="d-pickers" class="d-none pb-4">  
+            <input id="datepickerfrom1" class="date-picker me-3" name="datepickerfrom" width="300" type="date" required />
+            <input id="datepickerfrom2" class="date-picker" name="datepickerfrom" width="300" type="date" required />
+            </div>
               <div class="schedule">
-                <div class="day-schedule d-flex mt-4">
+                <div class="day-schedule d-flex">
                   <div class="day d-flex flex-column text-center ps-2 pe-4 pt-2">
                     <p class="number-day">21</p>
                     <p class="week-day">MIER.</p>
                   </div>
                   <div class="audiencia d-flex">
-                    <div class="d-flex flex-column  audiencia-table ">
+                    <div class="d-flex flex-column audiencia-table">
                       <div class="exact-audencia d-flex justify-content-between">
-                      <div class="">
-                        <p class="aud-hour">09:31 hs</p>
-                        <p class="aud-caratula">Ocampo y Acumuladas</p>
-                      </div>
-                      <div class="d-flex align-items-center">
-                        <div class="pe-4">
-                          <p class="aud-def">Alegatos</p>
-                          <p class="aud-def">Defensa</p>
+                        <div class="">
+                          <div class="d-flex align-items-center">
+                          <p class="date me-1">22/09/22</p>
+                          <p class="me-1">•</p>
+                          <p class="aud-hour">09:31 hs</p>
+                          </div>
+                          <p class="aud-caratula">Ocampo y Acumuladas</p>
                         </div>
-                        <div class="d-flex align-items-center ms-5 pe-2">
-                          <p class="aud-live d-flex align-items-center">VIVO  <img class="ps-1" src="/img/aud-live.svg" alt=""></p>
-                          <p class="aud-card ps-4"> <img src="/img/aud-card.svg" alt=""> </p>
+                        <div class="d-flex align-items-center">
+                          <div class="pe-4">
+                            <p class="aud-def">Alegatos</p>
+                            <p class="aud-def">Defensa</p>
+                          </div>
+                          <div class="d-flex align-items-center ms-5 pe-2">
+                            <p class="aud-live d-flex align-items-center">
+                              VIVO
+                              <img class="ps-1" src="/img/aud-live.svg" alt="" />
+                            </p>
+                            <p class="aud-card ps-4">
+                              <img src="/img/aud-card.svg" alt="" />
+                            </p>
+                          </div>
                         </div>
-                      </div>
                       </div>
 
                       <div class="exact-audencia d-flex justify-content-between">
@@ -204,8 +265,13 @@
                             <p class="aud-def">Defensa</p>
                           </div>
                           <div class="d-flex align-items-center ms-5 pe-2">
-                            <p class="aud-live d-flex align-items-center">VIVO <img class="ps-1" src="/img/aud-live.svg" alt=""></p>
-                            <p class="aud-card ps-4"> <img src="/img/aud-card.svg" alt=""> </p>
+                            <p class="aud-live d-flex align-items-center">
+                              VIVO
+                              <img class="ps-1" src="/img/aud-live.svg" alt="" />
+                            </p>
+                            <p class="aud-card ps-4">
+                              <img src="/img/aud-card.svg" alt="" />
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -221,8 +287,13 @@
                             <p class="aud-def">Defensa</p>
                           </div>
                           <div class="d-flex align-items-center ms-5 pe-2">
-                            <p class="aud-live d-flex align-items-center">VIVO <img class="ps-1" src="/img/aud-live.svg" alt=""></p>
-                            <p class="aud-card ps-4"> <img src="/img/aud-card.svg" alt=""> </p>
+                            <p class="aud-live d-flex align-items-center">
+                              VIVO
+                              <img class="ps-1" src="/img/aud-live.svg" alt="" />
+                            </p>
+                            <p class="aud-card ps-4">
+                              <img src="/img/aud-card.svg" alt="" />
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -235,14 +306,18 @@
           <div class="col-4 microrelatos ms-4">
             <p class="title mb-3">Microrrelatos</p>
             <p class="micro-subtitle mb-3">Historias, testimonios y escenas de los juicios</p>
-            <img class="micro-img mb-4" src="/img/micro-img.jpg" alt="">
+            <img class="micro-img mb-4" src="/img/micro-img.jpg" alt="" />
             <div class="micro-text">
               <p class="micro-bajada mb-2">Hacerse el dormido</p>
               <p class="micro-causa">CAUSA KLOTZMAN. LOS PATITOS.</p>
               <p class="micro-ep mb-3">EPISODIO 1</p>
-              <p class="micro-long mb-4">Pablo duerme en la cama de sus padres cuando escucha un gatillo sobre su cabeza.</p>
+              <p class="micro-long mb-4">
+                Pablo duerme en la cama de sus padres cuando escucha un gatillo sobre su cabeza.
+              </p>
             </div>
-            <button class="micro-button d-flex justify-content-center align-items-center ps-2">Ver Todo <img src="/img/arrow-micro.svg" alt=""> </button>
+            <button class="micro-button d-flex justify-content-center align-items-center ps-2">
+              Ver Todo <img src="/img/arrow-micro.svg" alt="" />
+            </button>
           </div>
         </div>
       </div>
@@ -288,25 +363,36 @@
                 <p class="title">Mapa de los Juicios</p>
                 <button class="micro-button d-flex justify-content-center align-items-center ps-2">Abrir mapa</button>
               </div>
-              <p class="mapa mt-3"> <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d884327.8983114439!2d-58.62540833684591!3d-34.41573228054256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1663687060110!5m2!1ses-419!2sar"
-                width="755" height="454" style="border-radius:4px;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+              <p class="mapa mt-3">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d884327.8983114439!2d-58.62540833684591!3d-34.41573228054256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1663687060110!5m2!1ses-419!2sar"
+                  width="755"
+                  height="454"
+                  style="border-radius: 4px"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </p>
             </div>
           </div>
           <div class="col-4 text-center">
             <div class="d-flex align-items-center mb-4">
               <div class="linea-recta"></div>
-            <p class="ps-3 pe-3 text-center title">Noticias</p>
-            <div class="linea-recta"></div>
+              <p class="ps-3 pe-3 text-center title">Noticias</p>
+              <div class="linea-recta"></div>
             </div>
             <div class="mb-3 position-relative">
-              <img class="news-img" src="/img/news-img1.png" alt="">
-              <p class="text-o-img position-absolute">La Secretaría de DDHH será querellante en una nueva causa por crímenes de lesa humanidad en Córdoba</p>
+              <img class="news-img" src="/img/news-img1.png" alt="" />
+              <p class="text-o-img position-absolute">
+                La Secretaría de DDHH será querellante en una nueva causa por crímenes de lesa humanidad en Córdoba
+              </p>
             </div>
             <div class="position-relative">
-              <img class="news-img" src="/img/news-img2.png" alt="">
-              <p class="text-o-img position-absolute">Neuquén: 14 exmilitares y expolicías fueron condenados en el juicio Escuelita VII</p>
+              <img class="news-img" src="/img/news-img2.png" alt="" />
+              <p class="text-o-img position-absolute">
+                Neuquén: 14 exmilitares y expolicías fueron condenados en el juicio Escuelita VII
+              </p>
             </div>
           </div>
         </div>
@@ -315,16 +401,16 @@
     <div class="time">
       <div class="container">
         <div class="row">
-          <div class="col-8 ">
+          <div class="col-8">
             <div class="time-line d-flex align-items-center justify-content-around">
               <p class="me-5">Línea de tiempo</p>
-              <img src="/img/time-line.svg" alt="">
+              <img src="/img/time-line.svg" alt="" />
             </div>
           </div>
           <div class="col-4">
             <div class="list d-flex align-items-center justify-content-around">
               <p>Listado de juicios</p>
-              <img src="/img/img-list-juicios.svg" alt="">
+              <img src="/img/img-list-juicios.svg" alt="" />
             </div>
           </div>
         </div>
@@ -332,29 +418,38 @@
     </div>
     <div class="footer d-flex align-items-center">
       <div class="container mt-3 d-flex justify-content-between align-items-center">
-      <div>
-        <div class="socials mb-3 d-flex align-items-center">
-          <img class="footer-img" src="/img/socials-footer.svg" alt="">
+        <div>
+          <div class="socials mb-3 d-flex align-items-center">
+            <img class="footer-img" src="/img/socials-footer.svg" alt="" />
+          </div>
+          <div class="footer-text">
+            <p class="footer-t bold mb-2">SECRETARÍA DE DERECHOS HUMANOS DE LA NACIÓN</p>
+            <p class="footer-t mb-1">AV. DEL LIBERTADOR 8151, CABA</p>
+            <p class="footer-t">ESPACIO MEMORIA Y DERECHOS HUMANOS (EX ESMA)</p>
+          </div>
         </div>
-        <div class="footer-text">
-          <p class="footer-t bold mb-2">SECRETARÍA DE DERECHOS HUMANOS DE LA NACIÓN</p>
-          <p class="footer-t mb-1">AV. DEL LIBERTADOR 8151, CABA</p>
-          <p class="footer-t">ESPACIO MEMORIA Y DERECHOS HUMANOS (EX ESMA)</p>
+        <div class="logos">
+          <img class="footer-img" src="/img/footer-logos.svg" alt="" />
         </div>
       </div>
-      <div class="logos">
-          <img class="footer-img" src="/img/footer-logos.svg" alt="">
-      </div>
     </div>
-    </div>
-    <div class="footer-black">
-    </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <div class="footer-black"></div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+      
 
     <script src="./script.js"></script>
   </body>
