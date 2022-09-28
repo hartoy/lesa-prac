@@ -24,28 +24,92 @@ function agendaFunction(x) {
 
 //Agenda call
 
-const allData = []
-console.log(typeof allData)
-function callData() {
-  fetch('http://api.juiciosdelesahumanidad.ar/api/v1.0/historico/agenda/fecha/2022-9-15/2022-9-22')
-    // Exito
-    .then((response) => response.json()) // convertir a json
-    .then((data) => allData.push(data.resultado)) //imprimir los datos en la consola
-    .catch((err) => console.log('Solicitud fallida', err)) // Capturar errores
+const arrayDateMaker = (arrayDates) => {
+  const arrayOfDate = arrayDates.map((item) => {
+    return item.proxima_audiencia
+  })
+  const arr = arrayOfDate.filter(function (item, index, inputArray) {
+    return inputArray.indexOf(item) == index
+  })
 
-    .then(() => {
-      setInfo()
-    })
+  return arr.map((item) => {
+    return {
+      date: item,
+      hearings: arrayDates.filter((subItem) => {
+        return subItem.proxima_audiencia === item
+      }),
+    }
+  })
 }
 
+let allData = []
+function callData() {
+  fetch('http://api.juiciosdelesahumanidad.ar/api/v1.0/historico/agenda/fecha/2022-9-15/2022-9-22')
+    .then((response) => response.json()) // convertir a json
+    .then((data) => (allData = arrayDateMaker(...Object.values(data.resultado)))) //imprimir los datos en la consola
+    .then(() => {
+      console.log(allData)
+      setInfo()
+    })
+    .catch((err) => console.log('Solicitud fallida', err)) // Capturar errores
+}
 callData()
 
 function setInfo() {
-  const lopo = allData[0].agenda.reduce(function (r, a) {
-    r[a.proxima_audiencia] = r[a.proxima_audiencia] || []
-    r[a.proxima_audiencia].push(a)
-    return r
-  }, Object.create(null))
+  allData.forEach((element) => {
+    const newDiv = document.createElement('div')
+    newDiv.classList.add('day-schedule', 'd-flex', 'flex-column', 'mb-2')
 
-  console.log(typeof lopo)
+    const audienciaDiv = document.createElement('div')
+    audienciaDiv.classList.add('audiencia', 'd-flex')
+    const divPadre = document.getElementsByClassName('schedule')
+    divPadre[0].append(newDiv)
+    newDiv.append(audienciaDiv)
+
+    const day = document.createElement('div')
+    day.classList.add('day', 'd-flex', 'flex-column', 'text-center', 'ps-2', 'pe-4', 'pt-2')
+    const audienciaTable = document.createElement('div')
+    audienciaTable.classList.add('d-flex', 'flex-column', 'audiencia-table')
+    audienciaDiv.append(day)
+    audienciaDiv.append(audienciaTable)
+
+    element.hearings.forEach((juicios) => {
+      //console.log(juicios)
+      const htmlForDays = `
+       <p class="number-day">21</p>
+      <p class="week-day">MIER.</p>
+      `
+      day.innerHTML = htmlForDays
+      console.log(audienciaTable)
+
+      const htmlAudienciaTable = `
+       <div class="exact-audencia d-flex justify-content-between">
+                        <div class="">
+                          <div class="d-flex align-items-center">
+                          <p class="date me-1">${juicios.proxima_audiencia}</p>
+                          <p class="me-1">•</p>
+                          <p class="aud-hour">${juicios.hora}</p>
+                          </div>
+                          <p class="aud-caratula">${juicios.caus_nombre_vulgar}</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <div class="pe-4">
+                            <p class="aud-def">${juicios.tipo_audiencia}</p>
+                            <p class="aud-def">${juicios.tipo_audiencia}</p>
+                          </div>
+                          <div class="d-flex align-items-center ms-5 pe-2">
+                            <p class="aud-live d-flex align-items-center">
+                              VIVO
+                              <img class="ps-1" src="/img/aud-live.svg" alt="" />
+                            </p>
+                            <p class="aud-card ps-4">
+                              <img src="/img/aud-card.svg" alt="" />
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+      `
+      audienciaTable.innerHTML += htmlAudienciaTable
+    })
+  })
 }

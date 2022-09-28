@@ -288,13 +288,15 @@ p {
 
 .schedule{
   overflow-y: scroll;
+  height:380px;
 }
 
 
 
 .day {
   width: 73px;
-  height: 278px;
+  min-height: 100px;
+  max-height: 278px;
   background-color: rgb(246, 247, 243);
   border-bottom-left-radius: 12px;
   border-top-left-radius: 12px;
@@ -302,7 +304,8 @@ p {
 }
 
 .audiencia-table {
-  height: 278px;
+  min-height: 100px;
+  max-height: 278px;
   width: 645px;
   border-radius: 0px 12px 12px 0px;
   border-bottom: 1px solid rgb(223, 224, 218);
