@@ -418,6 +418,7 @@ p {
   background-color: #5f6159;
   margin-bottom: 59px;
   font-family: $baseFont;
+  position: relative;
   & .trial-title {
     font-weight: 900;
     font-size: 25px;
@@ -473,6 +474,13 @@ p {
     opacity: 0.2;
     background-color: rgb(184, 186, 177);
     display: block;
+  }
+
+  .reloj{
+        position: absolute;
+        top: -5px;
+        left: 215px;
+        height:127px;
   }
 }
 
