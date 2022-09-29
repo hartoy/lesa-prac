@@ -533,10 +533,10 @@ iframe {
     p {
       width: 109px;
     }
-    &:hover {
-      background-color: $blackGreen;
-      color: $clearGreen;
-    }
+     &:hover {
+       background-color: $blackGreen;
+       color: $clearGreen;
+     }
   }
   & .list {
     background-color: rgb(223, 224, 218);
@@ -579,4 +579,32 @@ iframe {
 .bold {
   font-weight: 900;
   color: rgb(95, 97, 89);
+}
+
+
+//SVG CHANGE
+
+.time-line img:last-child {
+  display: none;
+}
+
+.time-line:hover .svg-clear {
+  display: none;
+}
+
+.time-line:hover img:last-child {
+  display: block;
+}
+
+
+.list img:last-child {
+  display: none;
+}
+
+.list:hover .list-clear{
+  display: none;
+}
+
+.list:hover .list-black {
+  display: block;
 }

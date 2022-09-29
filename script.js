@@ -48,7 +48,6 @@ function callData() {
     .then((response) => response.json()) // convertir a json
     .then((data) => (allData = arrayDateMaker(...Object.values(data.resultado)))) //imprimir los datos en la consola
     .then(() => {
-      console.log(allData)
       setInfo()
     })
     .catch((err) => console.log('Solicitud fallida', err)) // Capturar errores
@@ -74,13 +73,11 @@ function setInfo() {
     audienciaDiv.append(audienciaTable)
 
     element.hearings.forEach((juicios) => {
-      //console.log(juicios)
       const htmlForDays = `
        <p class="number-day">21</p>
       <p class="week-day">MIER.</p>
       `
       day.innerHTML = htmlForDays
-      console.log(audienciaTable)
 
       const htmlAudienciaTable = `
        <div class="exact-audencia d-flex justify-content-between">
@@ -113,3 +110,23 @@ function setInfo() {
     })
   })
 }
+
+//svg hover
+
+const timeLine = document.getElementsByClassName('time-line')
+console.log(timeLine)
+
+// timeLine[0].addEventListener('mouseenter', (event) => {
+//   const clearSvg = document.getElementsByClassName('svg-clear')
+//   const darkSvg = document.getElementsByClassName('svg-dark')
+//   //clearSvg.classList.toggle('d-none')
+//   //darkSvg.classList.toggle('d-none')
+
+//   if (darkSvg[0].classList.contains('d-none')) {
+//     darkSvg[0].classList.remove('d-none')
+//     clearSvg[0].classList.add('d-none')
+//   } else {
+//     clearSvg[0].classList.remove('d-none')
+//     darkSvg[0].classList.add('d-none')
+//   }
+// })
