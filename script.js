@@ -54,8 +54,246 @@ function callData() {
 }
 callData()
 
+const arrayHard = [
+  {
+    date: '2022-09 15',
+    hearings: [
+      {
+        accesibilidad: 'mailto:palvarezcarreras@jus.gob.ar',
+        caus_id: 1868,
+        caus_nombre_vulgar: 'Megacausa Jujuy',
+        hora: '08:36:00',
+        id: 1226,
+        proxima_audiencia: '2022-09-15',
+        sede: 'TOF JUJUY',
+        suspendida: 0,
+        tipo_audiencia: 'Alegatos Defensa',
+        transmision: 'https://www.youtube.com/watch?v=vFJnmbfqLE0',
+      },
+      {
+        accesibilidad: 'mailto:palvarezcarreras@jus.gob.ar',
+        caus_id: 1868,
+        caus_nombre_vulgar: 'Megacausa Jujuy',
+        hora: '08:36:00',
+        id: 1226,
+        proxima_audiencia: '2022-09-15',
+        sede: 'TOF JUJUY',
+        suspendida: 0,
+        tipo_audiencia: 'Alegatos Defensa',
+        transmision: 'https://www.youtube.com/watch?v=vFJnmbfqLE0',
+      },
+      {
+        accesibilidad: 'mailto:palvarezcarreras@jus.gob.ar',
+        caus_id: 1868,
+        caus_nombre_vulgar: 'Megacausa Jujuy',
+        hora: '08:36:00',
+        id: 1226,
+        proxima_audiencia: '2022-09-15',
+        sede: 'TOF JUJUY',
+        suspendida: 0,
+        tipo_audiencia: 'Alegatos Defensa',
+        transmision: 'https://www.youtube.com/watch?v=vFJnmbfqLE0',
+      },
+      {
+        accesibilidad: 'mailto:palvarezcarreras@jus.gob.ar',
+        caus_id: 1868,
+        caus_nombre_vulgar: 'Megacausa Jujuy',
+        hora: '08:36:00',
+        id: 1226,
+        proxima_audiencia: '2022-09-15',
+        sede: 'TOF JUJUY',
+        suspendida: 0,
+        tipo_audiencia: 'Alegatos Defensa',
+        transmision: 'https://www.youtube.com/watch?v=vFJnmbfqLE0',
+      },
+    ],
+  },
+  {
+    date: '2022-09 15',
+    hearings: [
+      {
+        accesibilidad: 'mailto:palvarezcarreras@jus.gob.ar',
+        caus_id: 1868,
+        caus_nombre_vulgar: 'Megacausa Jujuy',
+        hora: '08:36:00',
+        id: 1226,
+        proxima_audiencia: '2022-09-15',
+        sede: 'TOF JUJUY',
+        suspendida: 0,
+        tipo_audiencia: 'Alegatos Defensa',
+        transmision: 'https://www.youtube.com/watch?v=vFJnmbfqLE0',
+      },
+    ],
+  },
+  {
+    date: '2022-09 16',
+    hearings: [
+      {
+        accesibilidad: 'mailto:palvarezcarreras@jus.gob.ar',
+        caus_id: 1868,
+        caus_nombre_vulgar: 'Megacausa Jujuy',
+        hora: '08:36:00',
+        id: 1226,
+        proxima_audiencia: '2022-09-15',
+        sede: 'TOF JUJUY',
+        suspendida: 0,
+        tipo_audiencia: 'Alegatos Defensa',
+        transmision: 'https://www.youtube.com/watch?v=vFJnmbfqLE0',
+      },
+      {
+        accesibilidad: 'mailto:palvarezcarreras@jus.gob.ar',
+        caus_id: 1868,
+        caus_nombre_vulgar: 'Megacausa Jujuy',
+        hora: '08:36:00',
+        id: 1226,
+        proxima_audiencia: '2022-09-15',
+        sede: 'TOF JUJUY',
+        suspendida: 0,
+        tipo_audiencia: 'Alegatos Defensa',
+        transmision: 'https://www.youtube.com/watch?v=vFJnmbfqLE0',
+      },
+      {
+        accesibilidad: 'mailto:palvarezcarreras@jus.gob.ar',
+        caus_id: 1868,
+        caus_nombre_vulgar: 'Megacausa Jujuy',
+        hora: '08:36:00',
+        id: 1226,
+        proxima_audiencia: '2022-09-15',
+        sede: 'TOF JUJUY',
+        suspendida: 0,
+        tipo_audiencia: 'Alegatos Defensa',
+        transmision: 'https://www.youtube.com/watch?v=vFJnmbfqLE0',
+      },
+    ],
+  },
+  {
+    date: '2022-09 19',
+    hearings: [
+      {
+        accesibilidad: 'mailto:palvarezcarreras@jus.gob.ar',
+        caus_id: 1868,
+        caus_nombre_vulgar: 'Megacausa Jujuy',
+        hora: '08:36:00',
+        id: 1226,
+        proxima_audiencia: '2022-09-15',
+        sede: 'TOF JUJUY',
+        suspendida: 0,
+        tipo_audiencia: 'Alegatos Defensa',
+        transmision: 'https://www.youtube.com/watch?v=vFJnmbfqLE0',
+      },
+      {
+        accesibilidad: 'mailto:palvarezcarreras@jus.gob.ar',
+        caus_id: 1868,
+        caus_nombre_vulgar: 'Megacausa Jujuy',
+        hora: '08:36:00',
+        id: 1226,
+        proxima_audiencia: '2022-09-15',
+        sede: 'TOF JUJUY',
+        suspendida: 0,
+        tipo_audiencia: 'Alegatos Defensa',
+        transmision: 'https://www.youtube.com/watch?v=vFJnmbfqLE0',
+      },
+    ],
+  },
+  {
+    date: '2022-09 21',
+    hearings: [
+      {
+        accesibilidad: 'mailto:palvarezcarreras@jus.gob.ar',
+        caus_id: 1868,
+        caus_nombre_vulgar: 'Megacausa Jujuy',
+        hora: '08:36:00',
+        id: 1226,
+        proxima_audiencia: '2022-09-15',
+        sede: 'TOF JUJUY',
+        suspendida: 0,
+        tipo_audiencia: 'Alegatos Defensa',
+        transmision: 'https://www.youtube.com/watch?v=vFJnmbfqLE0',
+      },
+      {
+        accesibilidad: 'mailto:palvarezcarreras@jus.gob.ar',
+        caus_id: 1868,
+        caus_nombre_vulgar: 'Megacausa Jujuy',
+        hora: '08:36:00',
+        id: 1226,
+        proxima_audiencia: '2022-09-15',
+        sede: 'TOF JUJUY',
+        suspendida: 0,
+        tipo_audiencia: 'Alegatos Defensa',
+        transmision: 'https://www.youtube.com/watch?v=vFJnmbfqLE0',
+      },
+      {
+        accesibilidad: 'mailto:palvarezcarreras@jus.gob.ar',
+        caus_id: 1868,
+        caus_nombre_vulgar: 'Megacausa Jujuy',
+        hora: '08:36:00',
+        id: 1226,
+        proxima_audiencia: '2022-09-15',
+        sede: 'TOF JUJUY',
+        suspendida: 0,
+        tipo_audiencia: 'Alegatos Defensa',
+        transmision: 'https://www.youtube.com/watch?v=vFJnmbfqLE0',
+      },
+    ],
+  },
+  {
+    date: '2022-09 22',
+    hearings: [
+      {
+        accesibilidad: 'mailto:palvarezcarreras@jus.gob.ar',
+        caus_id: 1868,
+        caus_nombre_vulgar: 'Megacausa Jujuy',
+        hora: '08:36:00',
+        id: 1226,
+        proxima_audiencia: '2022-09-15',
+        sede: 'TOF JUJUY',
+        suspendida: 0,
+        tipo_audiencia: 'Alegatos Defensa',
+        transmision: 'https://www.youtube.com/watch?v=vFJnmbfqLE0',
+      },
+      {
+        accesibilidad: 'mailto:palvarezcarreras@jus.gob.ar',
+        caus_id: 1868,
+        caus_nombre_vulgar: 'Megacausa Jujuy',
+        hora: '08:36:00',
+        id: 1226,
+        proxima_audiencia: '2022-09-15',
+        sede: 'TOF JUJUY',
+        suspendida: 0,
+        tipo_audiencia: 'Alegatos Defensa',
+        transmision: 'https://www.youtube.com/watch?v=vFJnmbfqLE0',
+      },
+      {
+        accesibilidad: 'mailto:palvarezcarreras@jus.gob.ar',
+        caus_id: 1868,
+        caus_nombre_vulgar: 'Megacausa Jujuy',
+        hora: '08:36:00',
+        id: 1226,
+        proxima_audiencia: '2022-09-15',
+        sede: 'TOF JUJUY',
+        suspendida: 0,
+        tipo_audiencia: 'Alegatos Defensa',
+        transmision: 'https://www.youtube.com/watch?v=vFJnmbfqLE0',
+      },
+      {
+        accesibilidad: 'mailto:palvarezcarreras@jus.gob.ar',
+        caus_id: 1868,
+        caus_nombre_vulgar: 'Megacausa Jujuy',
+        hora: '08:36:00',
+        id: 1226,
+        proxima_audiencia: '2022-09-15',
+        sede: 'TOF JUJUY',
+        suspendida: 0,
+        tipo_audiencia: 'Alegatos Defensa',
+        transmision: 'https://www.youtube.com/watch?v=vFJnmbfqLE0',
+      },
+    ],
+  },
+]
+
 function setInfo() {
-  allData.forEach((element) => {
+  console.log(allData)
+  arrayHard.forEach((element) => {
     const newDiv = document.createElement('div')
     newDiv.classList.add('day-schedule', 'd-flex', 'flex-column', 'mb-2')
 
@@ -111,22 +349,4 @@ function setInfo() {
   })
 }
 
-//svg hover
-
-const timeLine = document.getElementsByClassName('time-line')
-console.log(timeLine)
-
-// timeLine[0].addEventListener('mouseenter', (event) => {
-//   const clearSvg = document.getElementsByClassName('svg-clear')
-//   const darkSvg = document.getElementsByClassName('svg-dark')
-//   //clearSvg.classList.toggle('d-none')
-//   //darkSvg.classList.toggle('d-none')
-
-//   if (darkSvg[0].classList.contains('d-none')) {
-//     darkSvg[0].classList.remove('d-none')
-//     clearSvg[0].classList.add('d-none')
-//   } else {
-//     clearSvg[0].classList.remove('d-none')
-//     darkSvg[0].classList.add('d-none')
-//   }
-// })
+console.log(arrayHard)
