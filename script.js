@@ -45,12 +45,12 @@ const arrayDateMaker = (arrayDates) => {
 let allData = []
 function callData() {
   fetch('http://api.juiciosdelesahumanidad.ar/api/v1.0/historico/agenda/fecha/2022-9-15/2022-9-22')
-    .then((response) => response.json()) // convertir a json
-    .then((data) => (allData = arrayDateMaker(...Object.values(data.resultado)))) //imprimir los datos en la consola
+    //.then((response) => response.json()) // convertir a json
+    //.then((data) => (allData = arrayDateMaker(...Object.values(data.resultado)))) //imprimir los datos en la consola
     .then(() => {
       setInfo()
     })
-    .catch((err) => console.log('Solicitud fallida', err)) // Capturar errores
+  //.catch((err) => console.log('Solicitud fallida', err)) // Capturar errores
 }
 callData()
 
@@ -292,7 +292,6 @@ const arrayHard = [
 ]
 
 function setInfo() {
-  console.log(allData)
   arrayHard.forEach((element) => {
     const newDiv = document.createElement('div')
     newDiv.classList.add('day-schedule', 'd-flex', 'flex-column', 'mb-2')
