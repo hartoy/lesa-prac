@@ -864,12 +864,12 @@ font-size:14px,
 
 @media only screen and (min-width: 767px) and (max-width: 1145px){
 .microrelatos{
-  width: 355px;
+  width: 355px !important;
 }
 .schedule{
-  height: 445px;
+  height: 445px !important;
 }
 .date-picker {
-  width: 348px;
-    }
+  width: 348px !important;
+   }
 }
