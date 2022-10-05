@@ -297,13 +297,13 @@ function setInfo() {
     newDiv.classList.add('day-schedule', 'd-flex', 'flex-column', 'mb-2')
 
     const audienciaDiv = document.createElement('div')
-    audienciaDiv.classList.add('audiencia', 'd-flex')
+    audienciaDiv.classList.add('audiencia', 'd-flex', 'flex-column', 'flex-md-row')
     const divPadre = document.getElementsByClassName('schedule')
     divPadre[0].append(newDiv)
     newDiv.append(audienciaDiv)
 
     const day = document.createElement('div')
-    day.classList.add('day', 'd-flex', 'flex-column', 'text-center', 'ps-2', 'pe-4', 'pt-2')
+    day.classList.add('day', 'd-flex', 'flex-md-column', 'text-center', 'ps-2', 'pe-4', 'pt-2', 'align-items-center')
     const audienciaTable = document.createElement('div')
     audienciaTable.classList.add('d-flex', 'flex-column', 'audiencia-table')
     audienciaDiv.append(day)
@@ -321,17 +321,17 @@ function setInfo() {
                         <div class="">
                           <div class="d-flex align-items-center">
                           <p class="date me-1">${juicios.proxima_audiencia}</p>
-                          <p class="me-1">•</p>
+                          <p class="dot me-1">•</p>
                           <p class="aud-hour">${juicios.hora}</p>
                           </div>
                           <p class="aud-caratula">${juicios.caus_nombre_vulgar}</p>
                         </div>
-                        <div class="d-flex align-items-center">
+                        <div class="d-flex flex-md-row flex-column align-items-center">
                           <div class="pe-4">
                             <p class="aud-def">${juicios.tipo_audiencia}</p>
                             <p class="aud-def">${juicios.tipo_audiencia}</p>
                           </div>
-                          <div class="d-flex align-items-center ms-5 pe-2">
+                          <div class="d-flex flex-md-row flex-column align-items-center ms-5 pe-2">
                             <p class="aud-live d-flex align-items-center">
                               VIVO
                               <img class="ps-1" src="/img/aud-live.svg" alt="" />
