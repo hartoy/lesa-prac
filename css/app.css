@@ -831,6 +831,9 @@ body {
   .agenda .title {
     font-size: 21px;
   }
+  .agenda .date-picker {
+    width: 335px;
+  }
   .agenda #datepickerfrom1 {
     margin-bottom: 15px;
   }
