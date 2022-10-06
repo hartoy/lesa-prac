@@ -287,12 +287,10 @@ p {
   border-top-right-radius: 23px;
 }
 
-.schedule{
+.schedule {
   overflow-y: scroll;
-  height:380px;
+  height: 380px;
 }
-
-
 
 .day {
   width: 73px;
@@ -352,10 +350,10 @@ p {
   text-overflow: ellipsis;
 }
 
-.date{
+.date {
   color: rgb(184, 186, 177);
   font-size: 12px;
-    font-weight: 900;
+  font-weight: 900;
 }
 
 .aud-def {
@@ -383,13 +381,12 @@ p {
   height: 32px;
 }
 
-.date-picker{
-  width:360px;
+.date-picker {
+  width: 360px;
   border: 1px solid rgb(184, 186, 177);
   border-radius: 8px;
-  height:38px;
+  height: 38px;
 }
-
 
 .micro-button {
   width: 131px;
@@ -414,9 +411,9 @@ p {
   }
 }
 
-.map{
-  .mobile{
-        display: none !important;
+.map {
+  .mobile {
+    display: none !important;
   }
 }
 
@@ -484,13 +481,13 @@ p {
     display: block;
   }
 
-  .reloj{
-        position: absolute;
-        top: 0px;
-        left: 325px;
-        height:127px;
+  .reloj {
+    position: absolute;
+    top: 0px;
+    left: 325px;
+    height: 127px;
   }
-  .mobile{
+  .mobile {
     display: none !important;
   }
 }
@@ -544,10 +541,10 @@ iframe {
     p {
       width: 109px;
     }
-     &:hover {
-       background-color: $blackGreen;
-       color: $clearGreen;
-     }
+    &:hover {
+      background-color: $blackGreen;
+      color: $clearGreen;
+    }
   }
   & .list {
     background-color: rgb(223, 224, 218);
@@ -586,19 +583,18 @@ iframe {
   font-family: Roboto;
   color: rgb(95, 97, 89);
 }
-.footer-black img{
-  display:none;
+.footer-black img {
+  display: none;
 }
 .bold {
   font-weight: 900;
   color: rgb(95, 97, 89);
 }
 
-
 //SVG CHANGE
 
-.svg-time-mobile{
-  display:none;
+.svg-time-mobile {
+  display: none;
 }
 
 .time-line img:last-child {
@@ -613,12 +609,11 @@ iframe {
   display: block;
 }
 
-
 .list img:last-child {
   display: none;
 }
 
-.list:hover .list-clear{
+.list:hover .list-clear {
   display: none;
 }
 
@@ -626,250 +621,286 @@ iframe {
   display: block;
 }
 
-
-
 @media only screen and (max-width: 767px) {
- html,
+  html,
   body {
     overflow-x: hidden;
     width: 100%;
   }
-.menu-nav{
-  right: 0px;
-  top: 50px;
-}
-.head{
-  height: 530px;
-  .title{
-    font-size:25px;
-    line-height: 31px;
-    text-align: center;
-    margin-bottom:23px !important;
+  .menu-nav {
+    right: 0px;
+    top: 50px;
   }
-  .head-text{
-    font-size:16px;
-    text-align: center;
-    margin-bottom: 18px !important;
-  }
+  .head {
+    height: 530px;
+    .title {
+      font-size: 25px;
+      line-height: 31px;
+      text-align: center;
+      margin-bottom: 23px !important;
+    }
+    .head-text {
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 18px !important;
+    }
 
-  .head-button{
-    text-align: center;
-    margin: 0 auto;
-  }
+    .head-button {
+      text-align: center;
+      margin: 0 auto;
+    }
 
-  .counter{
-    margin-top:20px;
-    position:relative;
-  }
-  .arco{
-    position:absolute;
-    left: 5px;
-    top: -40px;
-  }
+    .counter {
+      margin-top: 20px;
+      position: relative;
+    }
+    .arco {
+      position: absolute;
+      left: 5px;
+      top: -40px;
+    }
 
- .micro-button{
-  font-size: 11px;
- }
-}
-
-.agenda{
-  .title{
-    text-align: center;
-  }
-  .schedule{
-    height:406px;
-  } 
-}
-.first{
-  margin-bottom:0px !important;
-}
-.microrelatos{
-  width:100%;
-  height:564px;
-
-  .title, .micro-subtitle{
-    text-align: center;
-  }
-  .title{
-    font-size: 21px;
-  }
-  .micro-subtitle{
-    font-size: 16px;
-  }
-  .micro-img{
-    width: 95% !important;
-    border-radius: 4px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 261px !important;
-  }
-  .micro-text{
-    margin-left: 0.7rem;
-  }
-  .micro-bajada{
-      font-size:16px,
-  }
-  .micro-causa{
-font-size:14px,
-  }
-  .micro-ep{
-    font-size: 12px,
-  }
-  .micro-long{
-    font-size: 12px,
-  }
-}
-
-.trial{
-  height:401px;
-  .trial-title{
-    font-size: 21px;
-  }
-  .trial-sub{
-    font-size: 14px;
-  }
-  .trial-num{
-    font-size: 36px;
-    width: 100px;
-  }
-  .trial-text{
-    font-size:16px;
-    width:100px;
-  }
-  .micro-button{
-    display:none !important;
-  }
-  .line{
-    display:none;
-  }
-  .reloj{
-    left: 50%;
-      transform: translate(-50%, 85%);
-  }
-  .mobile{
-    display: block !important;
-  }
-}
-.map{
-  margin-bottom: 25px;
-  .title{
-    font-size: 21px;
-    text-align: center;
-  }
-  iframe{
-    height:418px;
-    width:100%;
-  }
-  .micro-button{
-    display:none !important;
-  }
-  .mobile{
-    display: block !important;
-    margin: 0 auto;
-    margin-top: 10px;
-  }
-}
-.second{
-.title{
-  font-size:21px;
-}  
-.news-img{
-  width: 100%;
-}
-.text-o-img{
-  font-size:16px;
-}
-}
-.time{
-  margin-bottom:50px;
-  .time-line, .list{
-    width: 100%;
-    p{
-      font-size:21px;
+    .micro-button {
+      font-size: 11px;
     }
   }
-  .svg-clear, .svg-dark{
-    display: none !important;
+
+  .agenda {
+    .title {
+      text-align: center;
+    }
+    .schedule {
+      height: 406px;
+    }
   }
+  .first {
+    margin-bottom: 0px !important;
+  }
+  .microrelatos {
+    width: 100%;
+    height: 564px;
+
+    .title,
+    .micro-subtitle {
+      text-align: center;
+    }
+    .title {
+      font-size: 21px;
+    }
+    .micro-subtitle {
+      font-size: 16px;
+    }
+    .micro-img {
+      width: 95% !important;
+      border-radius: 4px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      height: 261px !important;
+    }
+    .micro-text {
+      margin-left: 0.7rem;
+    }
+    .micro-bajada {
+      font-size: 16px;
+    }
+    .micro-causa {
+      font-size: 14px;
+    }
+    .micro-ep {
+      font-size: 12px;
+    }
+    .micro-long {
+      font-size: 12px;
+    }
+  }
+
+  .trial {
+    height: 401px;
+    .trial-title {
+      font-size: 21px;
+    }
+    .trial-sub {
+      font-size: 14px;
+    }
+    .trial-num {
+      font-size: 36px;
+      width: 100px;
+    }
+    .trial-text {
+      font-size: 16px;
+      width: 100px;
+    }
+    .micro-button {
+      display: none !important;
+    }
+    .line {
+      display: none;
+    }
+    .reloj {
+      left: 50%;
+      transform: translate(-50%, 85%);
+    }
+    .mobile {
+      display: block !important;
+    }
+  }
+  .map {
+    margin-bottom: 25px;
+    .title {
+      font-size: 21px;
+      text-align: center;
+    }
+    iframe {
+      height: 418px;
+      width: 100%;
+    }
+    .micro-button {
+      display: none !important;
+    }
+    .mobile {
+      display: block !important;
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+  }
+  .second {
+    .title {
+      font-size: 21px;
+    }
+    .news-img {
+      width: 100%;
+    }
+    .text-o-img {
+      font-size: 16px;
+    }
+  }
+  .time {
+    margin-bottom: 50px;
+    .time-line,
+    .list {
+      width: 100%;
+      p {
+        font-size: 21px;
+      }
+    }
+    .svg-clear,
+    .svg-dark {
+      display: none !important;
+    }
     .svg-time-mobile {
       display: block;
     }
+  }
+
+  .footer {
+    height: 325px;
+    .footer-text {
+      width: 95%;
+      text-align: center;
+    }
+  }
+  .footer-black {
+    height: 62px;
+    padding-top: 1px;
+    img {
+      height: 32px;
+      display: block;
+    }
+  }
+  .modal-content {
+    width: 99%;
+    margin-right: 0px;
+  }
+  .modal {
+    width: 100vw;
+    height: 100%;
+    top: 60%;
+  }
+  .modal-dialog {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .agenda {
+    .title {
+      font-size: 21px;
+    }
+    #datepickerfrom1 {
+      margin-bottom: 15px;
+    }
+    .aud-caratula {
+      font-size: 16px;
+    }
+    .aud-def {
+      display: none;
+    }
+    .audiencia-table {
+      width: 95%;
+      max-height: 350px;
+      border-left: 1px solid rgb(223, 224, 218);
+      border-radius: 0px 12px 12px 12px;
+    }
+    .day {
+      width: 55%;
+      min-height: 33px !important;
+      height: 33px !important;
+      border-radius: 12px 10px 0px 0px;
+      border-top: 1px solid rgb(223, 224, 218);
+      border-left: 1px solid rgb(223, 224, 218);
+      border-right: 1px solid rgb(223, 224, 218);
+    }
+    .number-day {
+      margin-right: 7px;
+      font-size: 21px;
+    }
+  }
 }
 
-.footer{
-  height:325px;
-  .footer-text{
-    width: 95%;
-    text-align: center;
+@media only screen and (min-width: 767px) and (max-width: 1145px) {
+  html,
+    body {
+      overflow-x: hidden;
+      width: 100%;
+    }
+    
+  .microrelatos {
+    width: 355px !important;
   }
-}
-.footer-black{
-  height:62px;
-  padding-top:1px ;
-  img{
-    height:32px;
-    display: block;
+  .schedule {
+    height: 445px !important;
   }
-}
-.modal-content{
-  width:99%;
-  margin-right:0px;
-}
-.modal{
-      width: 100vw;
-      height: 100%;
-        top: 60%;
-        left: 195px;
-}
-.modal-dialog{
-  display: flex;
-    flex-direction:column;
-}
+  .date-picker {
+    width: 348px !important;
+  }
 
-.agenda{
-  .title{
-    font-size: 21px;
-  }
-  #datepickerfrom1{
-    margin-bottom:15px;
-  }
-  .aud-caratula{
-    font-size: 16px;
-  }
-  .aud-def{
-    display: none;
-  }
-  .audiencia-table{
-    width: 95%;
-    max-height: 350px;
-    border-left: 1px solid rgb(223, 224, 218);
-    border-radius: 0px 12px 12px 12px;
-  }
-  .day{
-    width: 55%;
-    min-height:33px !important;
-    height:33px !important;
-    border-radius: 12px 10px 0px 0px;
-    border-top: 1px solid rgb(223, 224, 218);
-    border-left: 1px solid rgb(223, 224, 218);
-    border-right: 1px solid rgb(223, 224, 218);
-  }
-  .number-day{
-    margin-right: 7px;
-    font-size:21px;
-  }
-}
-}
+    .map {
+      margin-bottom: 25px;
+  
+      iframe {
+        height: 445px;
+        width: 100%;
+      }
+    }
+    .tablet{
+      display: flex;
+      justify-content: space-around;
+    }
+    
+    .list{
+      width: 100% !important;
+    }
+    .time-line{
+      width:100% !important;
+      margin-left: 10px;
+    }
+    .juicios-p{
+      font-size: 21px;
+      padding-left: 10px;
+    }
 
-@media only screen and (min-width: 767px) and (max-width: 1145px){
-.microrelatos{
-  width: 355px !important;
-}
-.schedule{
-  height: 445px !important;
-}
-.date-picker {
-  width: 348px !important;
-   }
+    .news-img{
+      width:100% !important;
+      margin-right: 30px;
+    }
 }

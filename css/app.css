@@ -675,7 +675,8 @@ body {
     width: 100%;
     height: 564px;
   }
-  .microrelatos .title, .microrelatos .micro-subtitle {
+  .microrelatos .title,
+.microrelatos .micro-subtitle {
     text-align: center;
   }
   .microrelatos .title {
@@ -773,13 +774,16 @@ body {
   .time {
     margin-bottom: 50px;
   }
-  .time .time-line, .time .list {
+  .time .time-line,
+.time .list {
     width: 100%;
   }
-  .time .time-line p, .time .list p {
+  .time .time-line p,
+.time .list p {
     font-size: 21px;
   }
-  .time .svg-clear, .time .svg-dark {
+  .time .svg-clear,
+.time .svg-dark {
     display: none !important;
   }
   .time .svg-time-mobile {
@@ -812,7 +816,6 @@ body {
     width: 100vw;
     height: 100%;
     top: 60%;
-    left: 195px;
   }
 
   .modal-dialog {
@@ -858,6 +861,12 @@ body {
   }
 }
 @media only screen and (min-width: 767px) and (max-width: 1145px) {
+  html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
   .microrelatos {
     width: 355px !important;
   }
@@ -868,5 +877,40 @@ body {
 
   .date-picker {
     width: 348px !important;
+  }
+
+  .map {
+    margin-bottom: 25px;
+  }
+  .map iframe {
+    height: 445px;
+    width: 100%;
+  }
+
+  .tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
+  .list {
+    width: 100% !important;
+  }
+
+  .time-line {
+    width: 100% !important;
+    margin-left: 10px;
+  }
+
+  .juicios-p {
+    font-size: 21px;
+    padding-left: 10px;
+  }
+
+  .news-img {
+    width: 100% !important;
+    margin-right: 30px;
   }
 }
